@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Online Dating Website</title>
+    <h1>Please Enter Your Info for Your Online Dating Profile</h1>
+    <meta name="author" content="Drake Scott">
+
+  </head>
+
+
+    <form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/multipart/form-data">
+    <fieldset>
+      <legend>What you look like</legend>
+        <label for="profile pic">Please upload a picture you would like to use as your profile picture</label><br>
+        <input type="file" name="profile pic" id="profile pic" required=""><br>
+        <label for="preview">Preview:</label>
+        <img id="preview"><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>General Info about You</legend>
+        <label for="user1stname">First Name:</label>
+        <input type="text" name="user1stname" id="user1stname" placeholder="Enter your first name here" required="" id="1stname"><br>
+        <label for="userlastname">Last Name:</label>
+        <input type="text" name="userlastname" id="userlastname" placeholder="Enter your last name here" required="" id="lastname"><br>
+        <label for="sex">What is your sex?:</label>
+        <input type="radio" name="sex" id="sex"value="male" required="">Male
+        <input type="radio" name="sex" id="sex" value="female">Female<br>
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" size="2" required=""><br>
+        <label for="birthdate">Date of Birth:</label>
+        <input type="date" name="birthdate" id="birthdate" max="2015-14-11"><br>
+        <label for="favoritecolor">Favorite Color:</label>
+        <input type="color" name="favoritecolor" id="favoritecolor"><br>
+        <label for="country">Country where you live:</label>
+        <select name="country" id="country" required="">
+          <option value="None selected">Please select below</option>
+          <option value="Canada">Canada</option>
+          <option value="China">China</option>
+          <option value="Russia">Russia</option>
+          <option value="United Kingdom">United Kingdom</option>
+          <option value="United States">United States</option>
+        </select><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Height and Salary</legend>
+        <label for="height">Height:</label>
+        Short<input type="range" name="height" id="height" min="0" max="100">Tall<br>
+        <label for="salary">Salary :</label>
+        Poor <input type="range" name="salary" id="salary" min="0" max="100">Rich<br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Contact Info</legend>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required=""><br>
+        <label for="telephone">Phone Number:</label>
+        <input type="tel" name="telephone" id="telephone"><br>
+        <label for="address">Address:</label>
+        <textarea name="address" id="address" rows="5" cols="40"></textarea><br>
+        Ways to contact you:<br>
+        <label for="emailcheck">Email</label>
+        <input type="checkbox" name="emailcheck" id="emailcheck" value="Email">
+        <label for="text">Text</label>
+        <input type="checkbox" name="text" id="text" value="Text">
+        <label for="call">Call</label>
+        <input type="checkbox" name="call" id="call" value="Call"><br><br>
+    </fieldset>
+
+      <input type="submit">
+    </form>
+
+
+
+
+
+</html>
